@@ -1,5 +1,5 @@
 site_name: Terraform Modules Docs
-repo_url: https://github.com/Friedmacher/tf_modules.git
+repo_url: https://github.com/manuel-friedmacher/tf_modules.git
 repo_name: manuel-friedmacher/tf_modules
 docs_dir: docs
 theme:

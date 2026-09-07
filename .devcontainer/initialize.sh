@@ -5,6 +5,9 @@ set -e
 TARGET_FILE=".devcontainer/devcontainer.env"
 EXAMPLE_FILE=".devcontainer/devcontainer.env.example"
 
+echo ""
+echo "‼️ Root setup started."
+
 # Check if the target file does not exist
 if [ ! -f "$TARGET_FILE" ]; then
     # Check if the example file actually exists before copying
@@ -12,7 +15,7 @@ if [ ! -f "$TARGET_FILE" ]; then
         cp "$EXAMPLE_FILE" "$TARGET_FILE"
         echo "✅ Success: Created $TARGET_FILE from $EXAMPLE_FILE."
     else
-        echo "Error: $EXAMPLE_FILE does not exist. Cannot copy."
+        echo "⛔️ Error: $EXAMPLE_FILE does not exist. Cannot copy."
         exit 1
     fi
 else

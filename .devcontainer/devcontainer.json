@@ -3,6 +3,7 @@
     "image": "mcr.microsoft.com/devcontainers/base:bookworm",
     "initializeCommand": "sh .devcontainer/initialize.sh",
     "postCreateCommand": "sh .devcontainer/post-create.sh",
+    "postStartCommand": "sh .devcontainer/post-start.sh",
     "runArgs": [
         "--env-file",
         ".devcontainer/devcontainer.env"
