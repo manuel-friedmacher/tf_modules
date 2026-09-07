@@ -11,6 +11,10 @@
     {
       "name": "Module: Enable Cloud Foundry",
       "path": "../repos/tf_module_enable_cf"
+    },
+    {
+      "name": "Module: Subscribe Workzone",
+      "path": "../repos/tf_module_workzone"
     }
   ],
   "settings": {
