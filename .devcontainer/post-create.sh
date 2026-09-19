@@ -24,7 +24,7 @@ sudo apt-get install -y --no-install-recommends \
 
 python3 -m venv "$HOME/.local/mkdocs-venv"
 "$HOME/.local/mkdocs-venv/bin/pip" install --upgrade pip
-"$HOME/.local/mkdocs-venv/bin/pip" install -r "$PROJECT_DIR/requirements.txt"
+"$HOME/.local/mkdocs-venv/bin/pip" install -r "$PROJECT_DIR/tf_modules/requirements.txt"
 
 mkdir -p "$HOME/.local/bin"
 ln -sf "$HOME/.local/mkdocs-venv/bin/mkdocs" "$HOME/.local/bin/mkdocs"
