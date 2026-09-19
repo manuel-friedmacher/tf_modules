@@ -20,6 +20,7 @@ nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Modules:
-      - BTPSA: modules/build_sa/index.md
-      - BTPCF: modules/enable_cf/index.md
-      - BTP Workzone: modules/workzone/index.md
+      - BTP Subaccount: modules/build_sa/index.md
+      - Cloud Foundry: modules/enable_cf/index.md
+      - Workzone: modules/workzone/index.md
+      - BTP ABAP Environment: modules/abap/index.md

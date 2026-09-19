@@ -11,6 +11,7 @@ echo "Retrieving required repositories into ../repos/"
 $SCRIPT_DIR/.devcontainer/get_git_repo.sh tf_module_build_sa
 $SCRIPT_DIR/.devcontainer/get_git_repo.sh tf_module_enable_cf
 $SCRIPT_DIR/.devcontainer/get_git_repo.sh tf_module_workzone
+$SCRIPT_DIR/.devcontainer/get_git_repo.sh tf_module_abap
 
 echo ""
 echo "✅ Running of User-level startup scripts complete."

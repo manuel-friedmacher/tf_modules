@@ -15,6 +15,10 @@
     {
       "name": "Module: Subscribe Workzone",
       "path": "../repos/tf_module_workzone"
+    },
+    {
+      "name": "Module: Subscribe BTP ABAP Environment",
+      "path": "../repos/tf_module_abap"
     }
   ],
   "settings": {
