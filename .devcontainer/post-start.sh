@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 echo ""
 echo "‼️ Run User-level startup scripts."

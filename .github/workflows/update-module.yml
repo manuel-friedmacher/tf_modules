@@ -22,10 +22,22 @@ jobs:
         run: |
           MODULE="${{ github.event.client_payload.module }}"
           VERSION="${{ github.event.client_payload.version }}"
+          case "$MODULE" in
+            build_sa|enable_cf|workzone) ;;
+            *)
+              echo "Unsupported module: $MODULE" >&2
+              exit 1
+              ;;
+          esac
+          if [[ -z "$VERSION" ]]; then
+            echo "A module version is required." >&2
+            exit 1
+          fi
           git clone --depth=1 \
             --branch "$VERSION" \
             https://github.com/manuel-friedmacher/tf_module_${MODULE}.git \
             /tmp/module-${MODULE}
+          rm -rf docs/modules/${MODULE}
           mkdir -p docs/modules/${MODULE}
           cp /tmp/module-${MODULE}/README.md docs/modules/${MODULE}/index.md
           if [ -d /tmp/module-${MODULE}/docs ]; then
@@ -33,8 +45,8 @@ jobs:
           fi
       - name: Configure Git
         run: |
-          git config user.name "Friedmacher"
-          git config user.email "manuel.friedmacher@outlook.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Deploy new version with mike
         run: |
           VERSION="${{ github.event.client_payload.version }}"

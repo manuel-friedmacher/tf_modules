@@ -22,3 +22,4 @@ nav:
   - Modules:
       - BTPSA: modules/build_sa/index.md
       - BTPCF: modules/enable_cf/index.md
+      - BTP Workzone: modules/workzone/index.md
