@@ -5,19 +5,19 @@
       "path": "."
     },
     {
-      "name": "Module: Build Subaccount",
+      "name": "Module: BTP Subaccount",
       "path": "../repos/tf_module_build_sa"
     },
     {
-      "name": "Module: Enable Cloud Foundry",
+      "name": "Module: Cloud Foundry",
       "path": "../repos/tf_module_enable_cf"
     },
     {
-      "name": "Module: Subscribe Workzone",
+      "name": "Module: Workzone",
       "path": "../repos/tf_module_workzone"
     },
     {
-      "name": "Module: Subscribe BTP ABAP Environment",
+      "name": "Module: BTP ABAP Environment",
       "path": "../repos/tf_module_abap"
     }
   ],
